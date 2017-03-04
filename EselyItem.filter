@@ -1,0 +1,735 @@
+# ------------------------------ ---------------------------------------------
+#                              Esely's Filter
+# ----------------------------------------------------------------------------
+
+# Hi
+# Last Updated - 3/3/17
+
+# -----------------------Description---------------------------------
+# The goal of this item filter is to make important drops more noticeable. 
+# No Items are hidden, "useless" items are given a smaller font
+# Original colors used for loot in PoE are preserved/recycled as much as possible
+
+
+
+# ----Frequently Asked Questions - FAQS----
+
+# (1) -------------------HOW TO INSTALL-------------------  
+# 				Step 1	 - Download .txt file
+#				Step 2	 - Change file to .filter extension
+#  				Step 3	 - Copy or cut filter to C:\Users\YOURUSERNAME\Documents\My Games\Path of Exile 	
+#				Step 3.5 - Launch Path of Exile
+#				Step 4	 - Go to Options -> UI -> Scroll down until you see load filter
+#				Step 5	 - Select filter, hit load, enjoy!
+		
+# (2) - Do I have to restart my game to install the filter?
+# (Answer) - No
+
+# (3) - Does this filter hide anything?
+# (Answer) - No
+
+# ------------------------------ ---------------------------------------------
+#                              Table of Contents
+# ----------------------------------------------------------------------------
+
+#0000 -- Rarest Items
+#0001 -- Quest/Mtx
+#0002 -- Divination Cards
+#0003 -- T4 Currency (Wisdom+)
+#0004 -- T3 Currency (Alteration+)
+#0005 -- T2 Currency (Chisel+)
+#0006 -- T1 Currency (Divine+)
+#0007 -- Unique Items
+#0008 -- Jewels
+#0009 -- Talisman
+#0010 -- Map Filtering Highlighting (T1-T6, T7-T11, T12-T14, T15) 
+#0011 -- Quality 20% Items
+#0012 -- Best Atziri Fragments
+#0013 -- Other Fragments
+#0014 -- 5 Link Items
+#0015 -- 6 Socket Items
+#0016 -- Chromatic Vendor Items
+#0017 -- Chisel Recipe Hammers
+#0018 -- Quality Gems & Important Gems
+#0019 -- Quality Flask
+#0020 -- Sorcerer Boots
+#0021 -- T1 iLvl + Best Base Items
+#0022 -- All Jewellery & Chaos/Regal Highlighting
+#0023 -- Best Quiver Bases
+#0024 -- Best Bow Bases & Chaos/Regal Item level highlighting
+#0025 -- Best 2H weapons & Chaos/Regal Item level highlighting
+#0026 -- Best Dagger weapons & Chaos/Regal Item level highlighting
+#0027 -- All Wands & Chaos/Regal Item level highlighting
+#0028 -- Best Armor & Chaos/Regal Item level highlighting
+#0029 -- Lab Items
+#0030 -- Any Other Rare Item
+#0031 -- Any Other Item (pseudo-hide)
+#0032 -- Hide On/Off
+
+
+
+#-----------------------------------------------------------------------------
+#----------------------------- ITEM FILTER START -----------------------------
+#-----------------------------------------------------------------------------
+
+
+
+
+
+# ----------------------------------------------------------------------------
+#                              Rarest Items
+# ----------------------------------------------------------------------------
+# 0000
+
+Show
+    BaseType "Mirror of Kalandra"
+    SetTextColor 51 255 255
+    SetBorderColor 51 255 255
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    PlayAlertSound 1 125
+
+Show
+    Class "Fishing Rod" 
+    SetTextColor 51 255 255
+    SetBorderColor 51 255 255
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    PlayAlertSound 1 125
+
+Show
+    BaseType "Albino Rhoa Feather"
+    SetTextColor 51 255 255
+    SetBorderColor 51 255 255
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    PlayAlertSound 1 125
+
+Show
+    LinkedSockets 6
+    SetTextColor 51 255 255
+    SetBorderColor 51 255 255
+    SetBackgroundColor 0 0 0
+    SetFontSize 36
+    PlayAlertSound 1 125
+
+# ----------------------------------------------------------------------------
+#                            Quest Item/MTX 
+# ----------------------------------------------------------------------------
+# 0001
+
+Show
+    Class Microtransactions
+
+Show
+    Class "Quest Item"
+    SetBorderColor 74 230 58 
+    SetFontSize 32
+
+
+# ----------------------------------------------------------------------------
+#                            Div Card
+# ----------------------------------------------------------------------------
+# 0002
+
+Show
+    Class "Divination"
+    BaseType "The Wolf's Shadow"
+    SetTextColor 193 181 121
+    SetBorderColor 193 181 12
+    SetFontSize 34
+
+Show
+    Class "Divination"
+    BaseType "House of Mirrors" "Wealth and Power" "The Dragon's Heart" "The Brittle Emperor"  "Celestial Justicar" "Dark Mage" "Doctor" "Fiend" "The Queen" "The Artist" "The Last One Standing" "The Artist" "Bowyer's Dream" "Hunter's Reward" "The Thaumaturgist" "The Warlord" "The Offering" "The Ethereal" "The Dapper Prodigy"  "Abandoned Wealth" "The Enlightened" "Last Hope" "The Devastator" "The Immortal" "The Aesthete" "The Hunger" "Pride Before the Fall" "The King's Heart" "Lysah's Respite" "Cursed King" "Time-Lost Relic" "Lucky Deck" "Formless Sea" "Sephirot" "The Valkyrie" "The Wolf"
+    SetFontSize 40
+    SetTextColor 193 181 12  
+    SetBorderColor 193 181 12
+
+Show
+    Class Card
+    SetTextColor 193 181 121
+    SetBorderColor 193 181 12
+    SetFontSize 34
+
+# ----------------------------------------------------------------------------
+#                           T4 Currency
+# ----------------------------------------------------------------------------
+# 0003
+
+Show
+    BaseType "Scroll Fragment" "Scroll of Wisdom" "Portal Scroll" "Orb of Transmutation" "Orb of Augmentation" "Glassblower's Bauble" "Blacksmith's Whetstone" "Armourer's Scrap" 
+    SetTextColor 193 181 121
+    SetFontSize 32
+
+
+# ----------------------------------------------------------------------------
+#                              T3 Currency
+# ----------------------------------------------------------------------------
+# 0004
+
+Show
+    BaseType "Orb of Alteration" "Chromatic Orb" "Orb of Chance" "Jeweller's Orb"
+    SetTextColor 193 181 121
+    SetBorderColor 193 181 121
+    SetFontSize 33
+
+Show
+    BaseType Perandus Coin
+    SetTextColor 193 181 121
+    SetBorderColor 255 200 0
+    SetFontSize 32
+
+Show
+    BaseType Silver Coin
+    SetTextColor 193 181 121
+    SetBorderColor 255 200 0
+    SetFontSize 32
+
+Show
+    BaseType Stacked Deck
+    SetTextColor 193 181 121
+    SetBorderColor 255 200 0
+    SetFontSize 32
+
+Show
+    BaseType Essence
+    SetTextColor 193 181 121
+    SetBorderColor 255 200 0
+    SetFontSize 32
+
+# ----------------------------------------------------------------------------
+#                              T2 Currency
+# ----------------------------------------------------------------------------
+# 0005
+
+Show
+BaseType "Essence of Corruption" "Regal Orb" "Orb of Regret" "Chaos Orb" "Blessed Orb" "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Vaal Orb" "Cartographer's Chisel" 
+    SetBackgroundColor 254 254 153 
+    SetTextColor 0 0 0
+    SetBorderColor 0 0 0
+    SetFontSize 34
+
+# ----------------------------------------------------------------------------
+#                              T1 Currency 
+# ----------------------------------------------------------------------------
+# 0006
+
+Show
+    BaseType "Divine Orb" "Exalted Orb" "Eternal Orb"
+    SetTextColor 51 255 255
+    SetBorderColor 51 255 255
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    PlayAlertSound 1 125
+
+# ----------------------------------------------------------------------------
+#                              Unique Item
+# ----------------------------------------------------------------------------
+# 0007
+Show
+    Rarity Unique
+    SetTextColor 255 128 0 
+    SetBorderColor 255 128 0
+    SetFontSize 36
+
+# ----------------------------------------------------------------------------
+#                               Jewels 
+# ----------------------------------------------------------------------------
+# 0008
+
+Show
+    BaseType "Crimson Jewel" 
+    SetBorderColor 191 0 0
+    SetFontSize 30
+
+Show
+    BaseType "Cobalt Jewel" 
+    SetBorderColor 0 0 254 
+    SetFontSize 30
+
+Show
+    BaseType "Viridian Jewel"
+    SetBorderColor 0 191 0 
+    SetFontSize 30
+
+# ----------------------------------------------------------------------------
+#                               Talisman 
+# ----------------------------------------------------------------------------
+# 0009
+
+Show
+    BaseType "Talisman"
+    SetBorderColor 254 128 128 
+    SetFontSize 30
+
+
+
+# ----------------------------------------------------------------------------
+#                              Map Highlighting
+# ----------------------------------------------------------------------------
+# 0010
+
+
+
+# ----------------------------------------------------------------------------
+#                               20% Item 
+# ----------------------------------------------------------------------------
+# 0011
+
+Show
+    Quality 20
+    SetBorderColor 255 255 255
+    SetFontSize 30
+
+# ---------------------------------------------------------------------------
+#                               Best Fragment
+# ---------------------------------------------------------------------------
+# 0012
+
+Show
+	BaseType "Mortal Hope"
+	Class "Map Fragments"
+    SetTextColor 20 20 20  
+    SetBorderColor 20 20 20
+    SetFontSize 36
+
+# ----------------------------------------------------------------------------
+#                               Fragments 
+# ----------------------------------------------------------------------------
+# 0013
+
+Show
+    Class "Map Fragments" 
+    SetBorderColor 255 160 255
+    SetFontSize 36
+
+Show
+    BaseType "Eber's Key" "Yriel's Key" "Inya's Key" "Volkuur's Key"
+    SetBorderColor 255 160 255
+    SetFontSize 36
+
+Show
+    BaseType "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Fragment of the Hydra"
+    SetBorderColor 255 160 255
+    SetFontSize 36
+
+# ----------------------------------------------------------------------------
+#                               5L 
+# ----------------------------------------------------------------------------
+# 0014
+Show
+    LinkedSockets 5 
+    SetBorderColor 255 160 255
+
+# ----------------------------------------------------------------------------
+#                              6 Socket 
+# ----------------------------------------------------------------------------
+# 0015
+Show
+    Sockets 6
+    SetBorderColor 255 160 255
+    SetFontSize 32
+
+# ----------------------------------------------------------------------------
+#                               Pseudo-Chrome 
+# ----------------------------------------------------------------------------
+# 0016
+
+Show
+    SocketGroup RGB
+    SetBorderColor 255 255 255
+
+# ----------------------------------------------------------------------------
+#                              Chisel Recipe 
+# ----------------------------------------------------------------------------
+# 0017
+
+Show
+    BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+    Rarity Normal
+    SetBorderColor 255 255 255
+
+# ----------------------------------------------------------------------------
+#                               Gems - Quality/Worth
+# ----------------------------------------------------------------------------
+# 0018
+
+Show
+    Class Gem
+    BaseType "Empower" "Enlighten" "Portal" "Enhance" "Vaal Haste"
+    SetBorderColor 27 162 155
+
+Show
+    Class Gem
+    Quality > 0
+    SetBorderColor 27 162 155
+
+# ----------------------------------------------------------------------------
+#                               Quality flask 
+# ----------------------------------------------------------------------------
+# 0019
+
+Show
+    Class Flask
+    Quality > 0
+    SetBorderColor 255 255 255
+
+# ----------------------------------------------------------------------------
+#                               Soon to be skyforth 
+# ----------------------------------------------------------------------------
+# 0020
+
+Show
+    BaseType "Sorcerer Boots
+    Rarity Normal
+    SetBorderColor 255 165 0
+
+# ----------------------------------------------------------------------------
+#                 Best iLvl & Best Items
+# ----------------------------------------------------------------------------
+# 0021
+
+Show
+	ItemLevel >= 84
+	BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots"
+	SetBackgroundColor 255 255 255
+	SetTextColor 0 0 0 
+             SetBorderColor 64 64 64
+	SetFontSize 35
+
+Show	Class Rings Amulet Belts
+	BaseType "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash"
+	ItemLevel >= 84
+	SetBackgroundColor 255 255 255
+	SetTextColor 0 0 0 
+             SetBorderColor 64 64 64
+	SetFontSize 35
+
+Show
+	BaseType "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris"
+	ItemLevel >= 83
+	SetBackgroundColor 255 255 255
+	SetTextColor 0 0 0 
+             SetBorderColor 64 64 64
+	SetFontSize 35
+Show
+	BaseType "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword"
+	ItemLevel >= 83
+	SetBackgroundColor 255 255 255
+	SetTextColor 0 0 0 
+             SetBorderColor 64 64 64
+	SetFontSize 35
+
+Show
+	BaseType "Sai"
+	ItemLevel >= 83
+	Class Daggers
+	SetBackgroundColor 255 255 255
+	SetTextColor 0 0 0 
+             SetBorderColor 64 64 64
+	SetFontSize 35
+
+Show
+	BaseType "Hubris Circlet" "Carnal Armour" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Assassin's Garb"
+	ItemLevel >= 83
+	SetBackgroundColor 255 255 255
+	SetTextColor 0 0 0 
+             SetBorderColor 64 64 64
+	SetFontSize 35
+
+Show
+	BaseType "Zodiac Leather" "Astral Plate" "Glorious Plate" "Vaal Regalia" "Titanium Spirit Shield" "Sorcerer Gloves"
+	ItemLevel >= 83
+	SetBackgroundColor 255 255 255
+	SetTextColor 0 0 0 
+             SetBorderColor 64 64 64
+	SetFontSize 35
+
+# ---------------------------------------------------------------------------
+#               Jewellery & Chaos/Regal Item level highlighting
+# ---------------------------------------------------------------------------
+# 0022
+
+Show 
+	Class Rings Amulet Belts
+	BaseType "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash"
+	Rarity Rare
+	ItemLevel >= 75
+  	SetTextColor 75 75 255
+      	SetBorderColor 83 83 253
+ 	 
+
+Show 
+	Class Rings Amulet Belts
+	BaseType "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash"
+	Rarity Rare
+	ItemLevel >= 60
+  	SetTextColor 0 204 102     
+             SetBorderColor 0 204 102  
+ 	
+
+Show 
+	Class Rings Amulet Belts
+	BaseType "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash"
+	Rarity Rare
+	SetBorderColor 255 255 51
+
+Show 
+	Class Rings Amulet Belts
+	Rarity Rare
+    SetBorderColor 255 255 51
+	SetFontSize 34
+
+# ---------------------------------------------------------------------------
+#                          Best Quiver Bases
+# ---------------------------------------------------------------------------
+# 0023
+
+Show
+	BaseType "Spike-Point Arrow Quiver" "Broadhead Arrow Quiver" "Two-Point Arrow Quiver"
+	Class "Quivers"
+	Rarity Rare
+SetBorderColor 255 255 51
+
+# ---------------------------------------------------------------------------
+#           Best Bow Bases & Chaos/Regal Item level highlighting
+# ---------------------------------------------------------------------------
+# 0024
+
+Show 
+	Class "Bows"
+	Rarity Rare
+	DropLevel >= 62
+	ItemLevel >= 75
+  	SetTextColor 75 75 255
+        SetBorderColor 83 83 253
+ 	
+
+Show 
+	Class "Bows"
+	Rarity Rare
+	DropLevel >= 62
+	ItemLevel >= 60
+  	SetTextColor 0 204 102     
+        SetBorderColor 0 204 102  
+ 	
+
+# ---------------------------------------------------------------------------
+#           Best 2H weapons & Chaos/Regal Item level highlighting
+# ---------------------------------------------------------------------------
+# 0025
+
+Show 
+	Class "Two Hand"
+	Rarity Rare
+	DropLevel >= 64
+	ItemLevel >= 75
+  	SetTextColor 75 75 255
+        SetBorderColor 83 83 253
+ 	
+
+Show 
+	Class "Two Hand"
+	Rarity Rare
+	DropLevel >= 64
+	ItemLevel >= 60
+  	SetTextColor 0 204 102     
+        SetBorderColor 0 204 102  
+ 	
+
+
+
+# ---------------------------------------------------------------------------
+#           Best Dagger weapons & Chaos/Regal Item level highlighting
+# ---------------------------------------------------------------------------
+# 0026
+
+Show 
+	Class Daggers
+	Rarity Rare
+	DropLevel >= 60
+	ItemLevel >= 75
+  	SetTextColor 75 75 255
+        SetBorderColor 83 83 253
+ 	
+
+
+Show 
+	Class Daggers
+	BaseType "Skean"
+	Rarity Rare
+	ItemLevel >= 75
+  	SetTextColor 75 75 255
+        SetBorderColor 83 83 253
+ 	
+
+
+Show 
+	Class Daggers
+	Rarity Rare
+	DropLevel >= 60
+	ItemLevel >= 60
+  	SetTextColor 0 204 102     
+        SetBorderColor 0 204 102  
+ 	
+
+
+Show 
+	Class Daggers
+	BaseType "Skean"
+	Rarity Rare
+	ItemLevel >= 60
+  	SetTextColor 0 204 102     
+        SetBorderColor 0 204 102  
+ 	
+
+
+# ---------------------------------------------------------------------------
+#               All Wands & Chaos/Regal Item level highlighting
+# ---------------------------------------------------------------------------
+# 0027
+
+Show 
+	Class Wands
+	Rarity Rare
+	DropLevel >= 59
+	ItemLevel >= 75
+  	SetTextColor 75 75 255
+        SetBorderColor 83 83 253
+ 	
+
+Show 
+	Class Wands
+	Rarity Rare
+	DropLevel >= 59
+	ItemLevel >= 60
+  	SetTextColor 0 204 102     
+        SetBorderColor 0 204 102  
+ 	
+
+
+Show 
+	Class Wands
+	Rarity Rare
+	DropLevel < 59
+	ItemLevel >= 75
+        SetBorderColor 83 83 253
+
+
+Show 
+	Class Wands
+	Rarity Rare
+	DropLevel < 59
+	ItemLevel >= 60
+        SetBorderColor 0 204 102  
+
+
+# ---------------------------------------------------------------------------
+#                 Best Armor & Chaos/Regal Item level highlighting
+# ---------------------------------------------------------------------------
+# 0028
+
+Show #$good
+	Class "Body Armour"
+	Rarity Rare
+	ItemLevel >= 75
+	DropLevel >= 60
+  	SetTextColor 75 75 255
+          SetBorderColor 83 83 253
+ 	
+
+Show 
+	Class "Gloves" "Boots" "Helmets"
+	Rarity Rare
+	ItemLevel >= 75
+	DropLevel >= 44
+  	SetTextColor 75 75 255
+             SetBorderColor 83 83 253
+ 	
+
+
+Show 
+	BaseType "Spirit Shield"
+	Class "Shields"
+	Rarity Rare
+	ItemLevel >= 75
+	DropLevel >= 55
+
+  	SetTextColor 75 75 255
+             SetBorderColor 83 83 253
+ 	
+
+
+Show 
+	Class "Body Armour"
+	Rarity Rare
+	ItemLevel >= 65
+	DropLevel >= 60
+  	SetTextColor 0 204 102     
+             SetBorderColor 0 204 102  
+ 	
+
+Show 
+	Class "Gloves" "Boots" "Helmets"
+	Rarity Rare
+	ItemLevel >= 60
+	DropLevel >= 44
+  	SetTextColor 0 204 102     
+             SetBorderColor 0 204 102  
+ 	
+ 
+
+Show 
+	BaseType "Spirit Shield"
+	Class "Shields"
+	Rarity Rare
+	ItemLevel >= 60
+	DropLevel >= 55
+  	SetTextColor 0 204 102     
+             SetBorderColor 0 204 102  
+ 	
+
+
+
+
+
+
+# ---------------------------------------------------------------------------
+#                Lab Items
+# ---------------------------------------------------------------------------
+# 0029
+
+Show
+    BaseType "Offering to the Goddess"
+
+Show
+    Class "Labyrinth"
+
+
+# ---------------------------------------------------------------------------
+#                Any Other Rare
+# ---------------------------------------------------------------------------
+# 0030
+
+Show
+    Rarity Rare
+    SetFontSize 30
+
+# ---------------------------------------------------------------------------
+#                Any Other Item (pseudo-hide)
+# ---------------------------------------------------------------------------
+# 0031
+
+Show
+    SetBackgroundColor 0 0 0 100
+    SetFontSize 26
+
+# ---------------------------------------------------------------------------
+#                Hide On/Off
+# ---------------------------------------------------------------------------
+# 0032
+
+#Hide
+    #SetBackgroundColor 0 0 0 140
+    #SetFontSize 26
