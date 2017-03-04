@@ -11,11 +11,17 @@ Frequently Asked Questions -
 
  (1) Installation - 
  			Step 1	 - Download .txt file
+			
 			Step 2	 - Change file to .filter extension
-  			Step 3	 - Copy or cut filter to C:\Users\YOURUSERNAME\Documents\My Games\Path of Exile 	
+			
+  			Step 3	 - Copy or cut filter to C:\Users\YOURUSERNAME\Documents\My Games\Path of Exile 
+			
 			Step 3.5 - Launch Path of Exile
+			
 			Step 4	 - Go to Options -> UI -> Scroll down until you see load filter
+			
 			Step 5	 - Select filter, hit load, enjoy!
+			
 		
  (2) - Do I have to restart my game to install the filter?
  (Answer) - No
