@@ -2,37 +2,6 @@
 #                              Esely's Filter
 # ----------------------------------------------------------------------------
 
-# ------------------------------ ---------------------------------------------
-#                              Table of Contents
-# ----------------------------------------------------------------------------
-
-#0000 -- Rarest Items
-#0001 -- Quest/Mtx
-#0002 -- Divination Cards
-#0003 -- T1 Currency (Divine+)
-#0004 -- T2 Currency (Chisel+)
-#0005 -- T3 Currency (Alteration+)
-#0006 -- T4 Currency (Wisdom+)
-#0007 -- Unique Items
-#0008 -- Jewels
-#0009 -- Talisman
-#0010 -- Map Filtering Highlighting (T1-T6, T7-T11, T12-T14, T15) 
-#0011 -- Quality 20% Items
-#0012 -- Best Atziri Fragments
-#0013 -- Other Fragments
-#0014 -- 5 Link Items
-#0015 -- 6 Socket Items
-#0016 -- Chromatic Vendor Items
-#0017 -- Chisel Recipe Hammers
-#0018 -- Quality Gems & Important Gems
-#0019 -- Quality Flask
-#0020 -- Sorcerer Boots
-#0021 -- Rare Highlighting - Sourced by Neversink
-#0022 -- Lab Items
-#0023 -- Any Other Rare Item
-#0024 -- Any Other Item (pseudo-hide)
-#0025 -- Hide On/Off
-
 
 #-----------------------------------------------------------------------------
 #-----------------------------------------------------------------------------
@@ -41,8 +10,9 @@
 #-----------------------------------------------------------------------------
 
 #
-#Craft Items for your build
+#Extra Items to Highlight
 #
+
 Show
 	BaseType "Leather Belt"
 	Rarity Normal		
@@ -78,7 +48,7 @@ Show
     SetFontSize 45
     PlayAlertSound 1 115
 
-#Exception for Tabula
+#Tabula
 	
 Show
 	BaseType "Simple Robe"
@@ -130,21 +100,21 @@ Show
 
 Show
 	Class "Divination"
-	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Formless Sea" "The Brittle Emperor" "The Immortal" "The Artist" "The Thaumaturgist" "Wealth and Power" "The Demoness" "Pride Before the Fall" "The Enlightened" "Heterochromia" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "The Porcupine" "Spark and the Flame"
+	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Emperor of Purity" "Polymath"
 	SetFontSize 45
     SetTextColor 193 181 12  
     SetBorderColor 193 181 12
 	
 Show
 	Class "Divination"
-	BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "Time-Lost Relic" "The Harvester" "The Hoarder" "Emperor of Purity" "The Chains that Bind" "The Warlord" "The Wolf" "The Aesthete" "Earth Drinker" "Polymath" "Saint's Treasure" "Standoff"
+	BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul"
 	SetFontSize 42
 	SetTextColor 193 181 12  
     SetBorderColor 193 181 12
 
 Show
 	Class "Divination"
-	BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "The Avenger" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Watcher" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Hubris" "Jack in the Box" "The Traitor" "Assassin's Favour" "The Battle Born" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken"
+	BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament"
 	SetTextColor 193 181 121
     SetBorderColor 193 181 12
 	SetFontSize 36
@@ -292,28 +262,75 @@ Show
 # 0007
 
 #------------------------------------
-#   [1402] Tier 1 uniques
+#   Tier 1 uniques
 #------------------------------------
 
-Show # T1
-	BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Void Axe" "Prophecy Wand" "Jewelled Foil" "Sorcerer Boots" "Occultist's Vestment" "Crusader Boots" "Clasped Mitts" "Rawhide Boots" "Ezomyte Tower Shield" "Deicide Mask" "Glorious Plate" "Cutlass" "Ezomyte Burgonet" "Assassin's Garb" "Royal Axe" "Crystal Belt"
+
+Show 
+	BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask"
 	Rarity Unique
 	SetFontSize 45
     SetTextColor 255 128 0 
-    SetBorderColor 255 128 0
+	SetBorderColor 255 128 0
+
+Show # %TB-Uniques-T1-Wep
+	BaseType "Void Axe" "Prophecy Wand" "Jewelled Foil" "Royal Axe" "Cutlass"
+	Rarity Unique
+	SetFontSize 45
+    SetTextColor 255 128 0 
+	SetBorderColor 255 128 0
+
+Show # %TB-Uniques-T1-Arm
+	BaseType "Sorcerer Boots" "Occultist's Vestment" "Crusader Boots" "Rawhide Boots" "Ezomyte Tower Shield" "Deicide Mask" "Glorious Plate" "Ezomyte Burgonet" "Assassin's Garb"
+	Rarity Unique
+	SetFontSize 45
+    SetTextColor 255 128 0 
+	SetBorderColor 255 128 0
+
+Show # %TB-Uniques-T1-Misc
+	BaseType "Greatwolf Talisman"
+	Rarity Unique
+	SetFontSize 45
+    SetTextColor 255 128 0 
+	SetBorderColor 255 128 0
 
 	
 #------------------------------------
-#   [1403] Tier 2 uniques
+#   Tier 2 uniques
 #------------------------------------
 
-Show # T2
-	BaseType "Blinder" "Granite Flask" "Grand Mana Flask" "Jasper Chopper" "Fiend Dagger" "Jingling Spirit Shield" "Imperial Staff" "Carnal Sceptre" "Labrys" "Siege Axe" "Abyssal Axe" "Savant's Robe" "Penetrating Arrow Quiver" "Cedar Tower Shield" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Onyx Amulet" "Two-Stone Ring" "Gold Ring" "Goathide Boots" "Ebony Tower Shield" "Blinder" "Ritual Sceptre" "Judgement Staff" "Vaal Sceptre" "Legion Gloves" "Raven Mask" "Champion Kite Shield" "Ironscale Gauntlets" "Murder Boots" "Ancient Greaves" "Sharkskin Tunic" "Elegant Ringmail" "Saintly Chainmail" "Tiger Sword"
+
+Show # %TB-Uniques-T2-Flasks
+	BaseType "Granite Flask" "Bismuth Flask"
+	Rarity Unique
+	SetFontSize 42
+    SetTextColor 255 128 0 
+	SetBorderColor 255 128 0
+
+Show # %TB-Uniques-T2-Wep
+	BaseType "Granite Flask" "Fiend Dagger" "Imperial Staff" "Carnal Sceptre" "Siege Axe" "Abyssal Axe" "Sacrificial Garb" "Ritual Sceptre" "Judgement Staff" "Vaal Sceptre" "Imperial Maul" "Steelhead" "Carnal Sceptre" "Terror Maul"
+	Rarity Unique
+	SetFontSize 42
+    SetTextColor 255 128 0 
+	SetBorderColor 255 128 0
+
+Show # %TB-Uniques-T2-Arm
+	BaseType "Jingling Spirit Shield" "Savant's Robe" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Legion Gloves" "Raven Mask" "Champion Kite Shield" "Nightmare Bascinet" "Clasped Mitts"
+	Rarity Unique
+	SetFontSize 42
+    SetTextColor 255 128 0 
+	SetBorderColor 255 128 0
+
+Show # %TB-Uniques-T2-Misc
+	BaseType "Penetrating Arrow Quiver" "Two-Stone Ring" "Gold Ring" "Crystal Belt" "Citrine Amulet"
 	Rarity Unique
 	SetFontSize 42
     SetTextColor 255 128 0 
 	SetBorderColor 255 128 0
  
+#------------------------------------
+#   [Other Uniques
+#------------------------------------
   
 Show
     Rarity Unique
